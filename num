@@ -1,0 +1,36 @@
+public class numero {
+    
+    static String num = "08945646548";
+    int prefijo;
+    int longitud;
+    
+    
+    
+    public static void main (String[] args){
+        if (siEsNumero(num))
+    {
+        System.out.printf("Es un numero");
+    }
+    else
+    {
+        System.out.printf("Error. No es un numero");
+    }
+    }
+    
+    
+    
+    
+    public static boolean siEsNumero(String num)    
+    {
+        try 
+        {
+            Integer.parseInt(num);
+            return true;
+        }
+        catch (Exception E)
+        {
+            return false;
+        }            
+}
+    
+}
